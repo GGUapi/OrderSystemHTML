@@ -9,13 +9,13 @@
 			<header id="header"><div class="inner">
 					<a href="index.html" class="logo" style="margin-left:-50%;color:#6A6767;font-size:32px;font-weight:500">ORDER SYSTEM</a>
 					<nav id="nav" style="text-align: justify;color:#6A6767;font-size:32px;padding-top:20px;">
-						<a href="index.html" style="padding-left:200px;">餐廳列表</a>
-						<a href="generic.html" style="padding-left:200px;">歷史訂單</a>
-						<a href="elements.html" style="padding-left:200px;">切換為商家模式</a>
-						<a>
+						<a href="restaurant.html" style="padding-left:200px;">餐廳列表</a>
+						<a href="history.html" style="padding-left:200px;">歷史訂單</a>
+						<a href="table.html" style="padding-left:200px;">切換為商家模式</a>
+						<a href="cart.html">
 							<img src="images/Rectangle10.png" style="position: absolute;top: 40%;left: 102%;">
 						</a>
-						<a>
+						<a href="profile.html">
 							<img src="images/Rectangle12.png" style="position: absolute;top: 40%;left: 110%;">
 						</a>
 
@@ -32,12 +32,34 @@
 							<p style = "color:black;width:250px;padding-top:20px;" >購物車</p>
 							<hr style="width:550px;">
 						</div>						
-						<div style="display: flex;position:absolute;left:27%;top:830%;">
+						<div>
+							<div style = "" id = "list" >
+								<div style = "display: flex;gap:75px;width:820px;">
+									<a href = "menu.html"><img src="images/menu1.jpg" style="width: 100px;"></a>
+									<p>伊比利豬雙人套餐</p>
+									<a>-</a>
+									<p style="color: #6cc091;">1</p>
+									<a>+</a>
+									<p style="color:red;">刪除</p>
+									<p style = "color:#707070">$2480</p>
+								</div>
+	
+								<div style = "display: flex;gap:75px;width:820px;">
+									<a href = "menu.html"><img src="images/menu3.jpg" style="width: 100px;"></a>
+									<p>豪華全牛雙人套餐</p>
+									<a>-</a>
+									<p style="color: #6cc091;">2</p>
+									<a>+</a>
+									<p style="color:red;">刪除</p>
+									<p style = "color:#707070">$5560</p>
+								</div>
+						</div>
+						<div style="display: flex;position:absolute;left:27%;top:250%;">
 							<p style = "color:black;width:250px;text-align:left;padding-top:10px;">總計：</p>
-							<p style = "color:black;width:250px;padding-top:10px;">$0</p>
+							<p style = "color:black;width:250px;padding-top:10px;">$8040</p>
 							<div style="display: grid;gap: 10px;">
-								<a><button style="width: 192px;">儲存</button>
-								<a><button style="width: 192px;">返回</button>
+								<a href="history.html"><button style="width: 192px;">送出</button>
+								<a href="javascript:window.history.back();"><button style="width: 192px;">返回</button>
 							</div>
 
 						</div>
@@ -122,3 +144,12 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<style>
+				#banner .flex div p{
+					color: black;
+				}
+
+				a{
+					text-decoration: none;
+				}
+			</style>

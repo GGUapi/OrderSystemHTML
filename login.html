@@ -47,7 +47,7 @@
 
 					</div>
 
-					<footer><a href="#" class="button">登入</a>
+					<footer><a href="restaurant.html" class="button">登入</a>
 					</footer>
 					<h2  style="padding-top:50px;">其他方式登入</h2>
 					<div style="display: flex;padding-left:475px;margin-top:-50px;">
@@ -57,7 +57,7 @@
 					</div>
 
 					<div style="display: flex;margin-left:28%;">
-						<a href="#" class="button">註冊</a>
+						<a href="register.html" class="button">註冊</a>
 						<a href="#" class="button" style="margin-left:35%;">忘記密碼</a>
 					</div>
 
@@ -101,4 +101,25 @@
 		</div> -->
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			  
+				// Your web app's Firebase configuration
+				const firebaseConfig = {
+				  apiKey: "AIzaSyCBOkzTxwRAEekGh0SYmhvV0Rd5E4YZAwg",
+				  authDomain: "guapi-a51d6.firebaseapp.com",
+				  databaseURL: "https://guapi-a51d6.firebaseio.com",
+				  projectId: "guapi-a51d6",
+				  storageBucket: "guapi-a51d6.appspot.com",
+				  messagingSenderId: "207858506810",
+				  appId: "1:207858506810:web:9d1481d20285c1dedf2903"
+				};
+			  
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+			  </script>
+		</body></html>

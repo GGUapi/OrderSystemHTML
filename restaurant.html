@@ -7,15 +7,15 @@
 
 		<!-- Header -->
 			<header id="header"><div class="inner">
-					<a href="index.html" class="logo" style="margin-left:-50%;color:#6A6767;font-size:32px;font-weight:500">ORDER SYSTEM</a>
+					<a class="logo" style="margin-left:-50%;color:#6A6767;font-size:32px;font-weight:500">ORDER SYSTEM</a>
 					<nav id="nav" style="text-align: justify;color:#6A6767;font-size:32px;padding-top:20px;">
-						<a href="index.html" style="padding-left:200px;">餐廳列表</a>
-						<a href="generic.html" style="padding-left:200px;">歷史訂單</a>
-						<a href="elements.html" style="padding-left:200px;">切換為商家模式</a>
-						<a>
+						<a href="restaurant.html" style="padding-left:200px;">餐廳列表</a>
+						<a href="history.html" style="padding-left:200px;">歷史訂單</a>
+						<a href="table.html" style="padding-left:200px;">切換為商家模式</a>
+						<a href="cart.html">
 							<img src="images/Rectangle10.png" style="position: absolute;top: 40%;left: 102%;">
 						</a>
-						<a>
+						<a href="profile.html">
 							<img src="images/Rectangle12.png" style="position: absolute;top: 40%;left: 110%;">
 						</a>
 
@@ -26,6 +26,44 @@
 						<div style="display: flex;">
 							<input type="text" id="InputAccount" name="InputAccount" placeholder="搜尋想吃的餐廳" style="width: 500px;">
 							<img src="images/Rectangle13.png" style="width: 7%;margin-left:44px;">
+						</div>
+
+						<div style = "display: flex;padding-top:70px;justify-content:flex-start;flex-wrap:wrap;width:1000px;margin-left:-27%;gap:150px;" id = "list" >
+							<div>
+								<a href = "menu.html"><img src="images/store1.png"></a>
+								<p>屋馬燒肉文心店</p>
+								<p style = "font-size: 12px; color:#707070">台中市南屯區文心路一段436號</p>
+							</div>
+
+							<div>
+								<a><img src="images/store2.jpg" style="width: 225px;height: 225px;"></a>
+								<p>燒瓶子台中北屯店</p>
+								<p style = "font-size: 12px; color:#707070">台中市北屯區東山路一段320號</p>
+							</div>
+
+							<div>
+								<a><img src="images/store3.jpg" style="width: 225px;height: 225px;"></a>
+								<p>星空Stellato</p>
+								<p style = "font-size: 12px; color:#707070">台中市北區育才街6巷3-3號</p>
+							</div>
+
+							<div>
+								<a><img src="images/store4.jpg" style="width: 225px;height: 225px;"></a>
+								<p>麥味登台中向上店</p>
+								<p style = "font-size: 12px; color:#707070">台中市西區向上南路一段127號</p>
+							</div>
+
+							<div>
+								<a><img src="images/store5.png" style="width: 225px;height: 225px;"></a>
+								<p>すき家台中中清店</p>
+								<p style = "font-size: 12px; color:#707070">台中市北屯區中清路二段1135號</p>
+							</div>
+
+							<div>
+								<a><img src="images/store6.png" style="width: 225px;height: 225px;"></a>
+								<p>壽司郎台中漢口路店</p>
+								<p style = "font-size: 12px; color:#707070">台中市北區漢口路四段293號</p>
+							</div>
 						</div>
 
 						<!--<div style="display: flex;">
@@ -108,3 +146,12 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<style>
+				#banner .flex div p{
+					color: black;
+				}
+
+				img{
+					max-width: 420px;
+				}
+			</style>

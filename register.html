@@ -7,73 +7,26 @@
 
 		<!-- Header -->
 			<header id="header"><div class="inner">
-					<a href="index.html" class="logo" style="margin-left:-50%;color:#6A6767;font-size:32px;font-weight:500">ORDER SYSTEM</a>
-					<nav id="nav" style="text-align: justify;color:#6A6767;font-size:32px;padding-top:20px;">
-						<a href="restaurant.html" style="padding-left:200px;">餐廳列表</a>
-						<a href="history.html" style="padding-left:200px;">歷史訂單</a>
-						<a href="table.html" style="padding-left:200px;">切換為商家模式</a>
-						<a href="cart.html">
-							<img src="images/Rectangle10.png" style="position: absolute;top: 40%;left: 102%;">
-						</a>
-						<a href="profile.html">
-							<img src="images/Rectangle12.png" style="position: absolute;top: 40%;left: 110%;">
-						</a>
-
+					<a href="index.html" class="logo"><strong>歡迎使用!</strong></a>
+					<nav id="nav">
 					</nav><a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
-			</header><!-- Banner --><section id="banner"><div class="inner">
+			</header><section id="banner"><div class="inner">
+					<header><h1>註冊</h1>
 					</header><div class="flex ">
-						<!--<div style="display: flex;margin-left: 80px;">
-							<input type="text" id="InputAccount" name="InputAccount" placeholder="搜尋菜色" style="width: 500px;">
-							<img src="images/Rectangle13.png" style="width: 7%;margin-left:44px;">
-						</div> -->
-						<div style="display: flex;">
-							<hr style="width:550px;">
-							<p style = "color:black;width:500px;padding-top:10px;font-size:32px;" >個人資料</p>
-							<hr style="width:550px;">
+						<div style="display: flex;margin-left:-70px;">
+							<label for="Account">帳號(電子郵件)：</label>
+							<input type="text" id="InputAccount" name="InputAccount">
 						</div>
-						<div style="background-color: #CFD1D6;font-size: 24px;padding: 30px;">
-							<p style="color: black;text-align:left;">姓名</p>
-							<p style="color: black;">王曉明</p>
-							<p style="color: black;text-align:left;">手機號碼</p>
-							<p style="color: black;">0912345678</p>
-							<p style="color: black;text-align:left;">電子郵件</p>
-							<p style="color: black;">blackdog100129@gmail.com</p>
-							<p style="color: black;text-align:left;">住址</p>
-							<p style="color: black;">嘉義市西區文化路1號</p>
-							<p style="color: black;text-align:left;">生日</p>
-							<p style="color: black;">90.9.30</p>
-						</div>						
-						<a><button style="margin-top: 20px;">儲存</button>
 
-
-
-						<!--<div style="display: flex;">
+						<div style="display: flex;margin-left:-70px;">
 							<label for="Password">密碼：</label>
 							<input type="text" id="InputPassword" name="InputPassword">
-						</div> -->
-						
-						<!--<div>
-							<span class="icon fa-car"></span>
-							<h3>Aliquam</h3>
-							<p>Suspendisse amet ullamco</p>
 						</div>
-
-						<div>
-							<span class="icon fa-camera"></span>
-							<h3>Elementum</h3>
-							<p>Class aptent taciti ad litora</p>
-						</div>
-
-						<div>
-							<span class="icon fa-bug"></span>
-							<h3>Ultrices</h3>
-							<p>Nulla vitae mauris non felis</p>
-						</div>-->
 
 					</div>
 
-					<!--<footer><a href="#" class="button">登入</a>
+					<footer><a href="#" class="button" id ="signupButton">註冊</a>
 					</footer>
 					<h2  style="padding-top:50px;">其他方式登入</h2>
 					<div style="display: flex;padding-left:475px;margin-top:-50px;">
@@ -81,14 +34,11 @@
 						<img src="images/ig.png" style="width: 17%;height:20%;">
 						<img src="images/google.png" style="width: 5%;height:20%;margin-left:7%;margin-top:5.5%;">
 					</div>
+						<a href="login.html" class="button">返回</a>
 
-					<div style="display: flex;margin-left:28%;">
-						<a href="#" class="button">註冊</a>
-						<a href="#" class="button" style="margin-left:35%;">忘記密碼</a>
-					</div> -->
 
-					<!--<img src="images/Rectangle6.png" style="position: absolute;left:100%;width: 180px;top:90%;">
-					<img src="images/Rectangle7.png" style="position: absolute;left:-10%;width: 180px;top:90%;"> -->
+					<img src="images/Rectangle6.png" style="position: absolute;left:100%;width: 180px;top:90%;">
+					<img src="images/Rectangle7.png" style="position: absolute;left:-10%;width: 180px;top:90%;">
 				</div>
 			</section><!-- Three -<section id="three" class="wrapper align-center"><div class="inner">
 					<div class="flex flex-2">
@@ -127,4 +77,47 @@
 		</div> -->
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			  
+				// Your web app's Firebase configuration
+				const firebaseConfig = {
+				  apiKey: "AIzaSyCBOkzTxwRAEekGh0SYmhvV0Rd5E4YZAwg",
+				  authDomain: "guapi-a51d6.firebaseapp.com",
+				  databaseURL: "https://guapi-a51d6.firebaseio.com",
+				  projectId: "guapi-a51d6",
+				  storageBucket: "guapi-a51d6.appspot.com",
+				  messagingSenderId: "207858506810",
+				  appId: "1:207858506810:web:9d1481d20285c1dedf2903"
+				};
+			  
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				  // 初始化Firebase
+  				firebase.initializeApp(firebaseConfig);
+  
+  				// 註冊功能
+  				document.getElementById('signupButton').addEventListener('click', function() {
+					var email = document.getElementById('InputAccount').value;
+					var password = document.getElementById('InputPassword').value;
+  
+					firebase.auth().createUserWithEmailAndPassword(email, password)
+	  				.then((userCredential) => {
+					// 註冊成功
+						console.log('註冊成功:', userCredential.user);
+						alert('註冊成功！');
+					// 這裡可以添加重定向或其他邏輯
+	  				})
+	  				.catch((error) => {
+						var errorCode = error.code;
+						var errorMessage = error.message;
+						console.error('註冊失敗:', errorCode, errorMessage);
+						alert('註冊失敗：' + errorMessage);
+	  					});
+  					});
+			  </script>
+		</body></html>
